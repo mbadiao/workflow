@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    color: #ff4f5a;
+}
+.container{
+    width: 70%;
+    display: grid;
+    min-height: 100vh;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img > img{
+    width:60%;
+    height: 70dvh;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .img > img{
+        height: 39dvh;
+    }
+}

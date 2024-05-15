@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #ff4f5a;
+  --secondary-color: #000000;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+footer.footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.footer > .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #ff4f5a;
+  text-decoration: none;
+}
+
+.navlink {
+  width: 30%;
+}
+.navlink > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burgerbutton {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+li > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li > a:active {
+  color: #ff4f5a;
+}
+
+li > a:hover {
+  color: #ff4f5a;
+}
+
+.navfooter {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+/* ------------------------HOME PAGE --------------------*/
+
+.hero {
+  position: relative;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img > img {
+  width: 40dvw;
+}
+
+.hero-img {
+  width: 50%;
+}
+.hero-text {
+  width: 50%;
+}
+
+.hero-button {
+  margin-top: 3%;
+  border: none;
+  background-color: #ff4f5a;
+  padding: 2%;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+.hero-button > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ------------------ ------services -----------------*/
+/*  --------------------task section ----------------*/
+.task {
+  position: relative;
+  margin-top: 10%;
+  width: 100%;
+}
+.task > h1 {
+  text-align: center;
+}
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-text {
+  width: 40%;
+}
+.task-img > img {
+  width: 30dvw;
+}
+
+/*  --------------------time section ----------------*/
+
+.time {
+  position: relative;
+  margin-top: 10%;
+  width: 100%;
+}
+.time > h1 {
+  text-align: center;
+}
+.time-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.time-text {
+  width: 40%;
+}
+.time-img > img {
+  width: 30dvw;
+}
+
+/*  --------------------team collaboration section ----------------*/
+
+.collab {
+  position: relative;
+  margin-top: 10%;
+  width: 100%;
+}
+.collab > h1 {
+  text-align: center;
+}
+.collab-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collab-text {
+  width: 40%;
+}
+.collab-img > img {
+  width: 30dvw;
+}
+
+/*------------------------ CONTACT PAGES ----------------------*/
+.contact-form {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.contact-form > h1 {
+  text-align: center;
+}
+
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-form-input {
+  width: 40%;
+}
+
+.contact-form-input input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff4f5a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-form-input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff4f5a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.contact-form-input textarea {
+  height: 150px;
+}
+
+.contact-form-button > input {
+  margin-top: 3%;
+  border: none;
+  background-color: #ff4f5a;
+  padding: 2%;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.contact-form-button > input {
+  color: white;
+  text-decoration: none;
+}
+
+/* ----------------------- RESPONSIVE DESIGN ------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for tablets */
+  /* ... */
+  .hero {
+    flex-direction: column;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-img > img {
+    width: 100%;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .task-container {
+    margin-top: 8%;
+    flex-direction: column;
+  }
+  .task-text {
+    width: 100%;
+  }
+  .task-img > img {
+    width: 100%;
+  }
+  .time-container {
+    margin-top: 8%;
+    flex-direction: column;
+  }
+  .time-text {
+    width: 100%;
+  }
+  .time-img > img {
+    width: 100%;
+  }
+  .collab-container {
+    margin-top: 8%;
+    flex-direction: column;
+  }
+  .collab-text {
+    width: 100%;
+  } 
+  .collab-img > img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .contact-form-container {
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  .contact-form-input {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* CSS styles for mobile screens */
+  /* ... */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    flex-direction: column;
+  }
+}
