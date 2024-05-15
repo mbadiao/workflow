@@ -5,8 +5,7 @@ function blockSundays(req, res, next) {
   const dayOfWeek = new Date();
   const date = dayOfWeek.getDay();
   const hours = dayOfWeek.getHours();
-  //
-  if (date <= 1 || (date > 6 && hours <= 9) || hours >= 17) {
+  if ((date === 6) || (date === 0) || (hours < 9) || (hours >= 17))  {
     res.status(403);
     res.render("error", {
       errorStatus: "403 |",
